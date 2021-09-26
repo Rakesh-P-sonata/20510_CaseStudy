@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form design</title>
+    <style>
+        body {
+            align-items: center;
+            background-color: #000;
+            display: flex;
+            color: blanchedalmond;
+            justify-content: center;
+        }
+
+        form {
+            background-color: #15172b;
+            border-radius: 20px;
+            box-sizing: border-box;
+            height: 600px;
+            padding: 20px;
+            width: 620px;
+            margin: 50px;
+        }
+
+        input {
+            margin: 5px;
+            padding: 2px;
+        }
+
+        button {
+            background-color: #08d;
+            border-radius: 12px;
+            box-sizing: border-box;
+            color: #eee;
+            cursor: pointer;
+            font-size: 18px;
+            height: 50px;
+            margin-top: 38px;
+            text-align: center;
+            width: 100%;
+        }
+
+        h1 {
+            color: #08d;
+        }
+    </style>
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <form class="placeh">
+        <h1>Patient details</h1>
+
+        <label for="Pname">Employee Name :</label>
+        <input type="text" id="Pname" name="Pname" required><br>
+
+        <label for="Contact">Contact No :</label>
+        <input type="tel" id="Contact" name="Contact" required maxlength="10"><br>
+
+        <label for="mail">Email :</label>
+        <input type="email" id="mail" name="mail" required><br>
+
+        <label>Choose a Speciality</label>
+        <input type="radio" id="spl" name="spl" value="Ortopedic">
+        <label for="spl">Ortopedic</label>
+
+        <input type="radio" id="spl" name="spl" value="Gynacologist">
+        <label for="spl">Gynacologist</label>
+
+        <input type="radio" id="spl" name="spl" value="HeartSergon">
+        <label for="spl">Heart Sergon</label><br><br>
+
+
+
+        <label for="slot">Choose a Slot: </label>
+
+        <select name="slot" id="OtherFacilities">
+            <option value="">5:00 PM - 5:45 PM
+            </option>
+            <option value="">1:00 PM - 1:30 PM
+            </option>
+            <option value="">10 AM - 11 AM</option>
+        </select><br>
+
+        <button onclick="details()">Submit</button>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Doctor Login </title>
+
+    <link rel="stylesheet" href="index.css" />
+
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+
+            <form id="form_id" method="post" name="myform">
+                <center>
+                    <h2>Doctor login</h2>
+                </center>
+                <label>User Name :</label>
+                <input type="text" name="username" id="username" required />
+                <label>Password :</label>
+                <input type="password" name="password" id="password" minlength="6" />
+                <input type="button" value="Login" id="submit" onclick="dvalidate()" />
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
